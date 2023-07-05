@@ -1,0 +1,28 @@
+{
+    "name": "abriolon/oss-td",
+    "description": "Demo package",
+    "type": "libra",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Abriolon\\OssTd\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Augustin",
+            "email": "augustin.briolon@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.2"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyse src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    }
+}
